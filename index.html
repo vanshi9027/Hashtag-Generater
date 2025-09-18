@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostCraft -Craft Your Trends </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<header class="head">
+
+        <!-- LOGO  -->
+       <div class="logo-btn">
+        
+        <a  href="#">
+           <i class="fas fa-hashtag"></i> PostCraft
+        </a>
+        </div>
+
+
+          
+         <input type="checkbox" id="check"/>
+          <div class="btn-bar">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+          </div>
+       
+         <!-- navbar -->
+     
+         <div class="nav-box">
+        
+            
+            <div>
+                 
+                <i class="fa-solid fa-pen-to-square"></i> 
+                <a href="#" id="link">Idea Box </a>
+                
+            </div>
+
+            <div>
+                 <i class="fa-solid fa-hashtag"></i>
+                    <a href="#" id="link"> Tags Hub</a>
+                
+            </div>
+                
+             <div>
+                
+                    <i class="fa-solid fa-file-lines"></i>
+                    <a href="#" id="link"> Post Lab</a>
+                
+            </div>
+            <div>
+                  
+             <i class="fa-solid fa-gear"></i> 
+                    <a href="#" id="link"> Setting </a> 
+            </div>
+
+            </div>
+
+
+            
+       
+       <!-- Toggle Button -->
+        
+         
+    
+
+    </header>
+
+    <main class="main">
+         
+        <!-- Left panel input section -->
+        <section id="input">
+           
+
+        <div>
+             <h4>Content Lab</h4>  
+        </div>
+        
+         <div>
+            <form action="#">
+             
+            <!-- Topic Input -->
+            <div class="item">
+            <label for="topic"> Topic</label>
+            <input type="text" id="topic" placeholder="Enter topic">
+            </div>
+           
+            <!-- Extra keyword -->
+           <div class="item">
+            <label for="keyword" > Extra Keywords</label>
+            <input type="keyword" id="keyword" placeholder="Coding , tips , devlife">
+           
+           </div>
+            
+
+            
+            <!--  TONE /Style -->
+
+             <div class="item">
+            <label for ='tone'> Tone</label>
+            <select name="Tone" id="tone">
+                <option>Professional</option>
+                <option>Casual</option>
+                <option>Funny</option>
+                <option>Inspirational</option>
+            </select>
+            <label for="style">Style</label>
+            <select name="style" id="style">
+                <option value ="design">Minimal</option>
+            </select>
+            </div>
+
+            <!-- slider -->
+             <div class="item">
+                   <label for="slider" >Creativity Level</label>
+                   <input type="range"  id="slider" min="0" max="100">
+             </div>
+
+              
+             <!-- checkboxes -->
+            <div class="item">
+            <label for="platform"> PlatForms</label>
+            <br>
+            <br>
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" class="check" id="instagram" value="insta">
+        
+        
+            <label for="twitter"> Twitter</label>
+            <input type="checkbox"  class='check' id="twitter" value="twit">>
+              
+
+            <label for="Linkedin"> Linkdin </label>
+            <input type="checkbox"  class='check'id="Linkdin" value="link">
+        
+
+            <label for="youtube">YouTube</label>
+            <input type="checkbox"  class='check'id="YouTube" valur="yout">
+            </div>
+         <!-- submit Button -->
+          <button>Generate Hashtags</button>
+        </form>
+ 
+         </div>
+        </section>
+        <section id="hashtags">  Hashtag hub </section>
+        <br>
+        <br>
+        <section id="post"> Post lab</section>
+     
+    </main>
+
+    <footer class="foot">
+
+    </footer>
+
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

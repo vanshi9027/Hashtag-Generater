@@ -1,2 +1,4 @@
-# Hashtag-Generater
-"A simple hashtag generator using HTML, CSS &amp; JavaScript to create hashtags from text.."
+ # Hashtag-Generater
+
+A simple Hashtag Generator built using HTML, CSS, and JavaScript.
+This project allows users to input text, and automatically generates hashtags from the entered words.

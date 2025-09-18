@@ -1,0 +1,243 @@
+
+body{
+    margin:0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+    background: url("photo.png");
+    background-size: cover;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.head{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px solid black; */
+    margin-right: 20px;
+    /* background-color: red; */
+
+
+}
+
+/* logo name */
+.logo-btn{
+  
+    font-size: 40px; 
+     font-weight: 500;
+     
+    
+
+}
+
+.logo-btn a{
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.nav-box {
+    display: flex;
+    position:absolute;
+    flex-wrap: wrap;
+    left: 50%;
+    gap : 2rem;
+}
+.nav-box a{
+
+    width:100%;
+    padding :5px 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0.5;
+    
+}
+
+.btn-bar i{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    /* bottom: 100px; */
+    color: rgb(22, 18, 18);
+    display: none;
+    flex-direction: column;
+    gap : 5px;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+
+    
+
+}
+
+
+#check{
+    display: none;
+}
+.logo-btn a:hover{
+    opacity: 1;
+    transform: scale(2);
+
+}
+.nav-box a:hover{
+     opacity: 1;
+    transform: scale(2);
+
+}
+
+
+
+@media(max-width: 768px){
+    .nav-box{
+    position: fixed;
+    right: -250px;
+    top :60px;
+    height:calc(100% - 60px);
+    width: 200px;
+    background: rgba(255, 230, 216, 0.95);  /* pastel warm orange */
+    box-shadow:  -4px 0 20px rgba(255 150, 100, 0.6);
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    left : auto;
+    }
+    .nav-box div{
+        /* height:100%; */
+        width:200px;
+        margin: 6px;
+        padding:  10px 10px;
+    }
+    .nav-box i {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+
+    .nav-box{
+        display: flex;
+    }
+    .btn-bar i{
+        display: flex;
+    }
+}
+
+
+#check:checked ~.nav-box{
+    right:0;
+}
+
+
+
+/* main input style */
+
+
+.main{
+    /* background-color: blue; */
+    flex:1;
+    /* overflow: auto; */
+
+
+}
+
+#input{
+    height: 500px;
+    width: 1000px;
+    border: 2px solid black;
+    position: absolute;
+    text-align: center;
+    left:300px; 
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 16px 32px rgba(31, 38, 135, 0.2);
+    transition: 1s;
+}
+#input:hover{
+    background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1)),
+    linear-gradient(135deg, #ff6ec7, #ffa54c, #ff3cac);
+    box-shadow: 0px 40px 40px rgba(135, 31, 69, 0.4);
+}
+#input h4{
+    font-size: 30px;
+     text-shadow: #ffa54c;
+     
+     text-align: center;
+}
+
+.item{
+    height: 50px;
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px; 
+    padding-left : 6px;
+    padding-right: 8px;
+    transition: 1s;
+    
+    
+    
+}
+.item:hover{
+    box-shadow: 4px 5px 100px rgb(198, 124, 97);
+
+}
+.item label{
+    display: inline;
+    font-weight: bold;
+    color: #333;
+    padding-right: 4px;
+    
+}
+
+.item input{
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 4px 3px 100px rgba(255, 166, 0, 0.34);
+    
+}
+
+select {
+  width: 310px;    /* horizontal size */
+  height: 30px;    /* vertical size */
+  font-size: 16px; /* andar ka text bada */
+  padding-left: 4px;
+  border-radius: 10px;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);  /* 1.5x bada */
+  margin: 5px;
+}
+
+
+.foot{
+    /* background-color: yellow; */
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    height: 50px;
+}
